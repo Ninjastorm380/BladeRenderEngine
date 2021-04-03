@@ -1,0 +1,11 @@
+/home/demon4hire/Projects/BladeRenderEngine/Blade/bin/x64/Release/bass.dll
+/home/demon4hire/Projects/BladeRenderEngine/Blade/bin/x64/Release/libbass.so
+/home/demon4hire/Projects/BladeRenderEngine/Blade/bin/x64/Release/Blade.dll
+/home/demon4hire/Projects/BladeRenderEngine/Blade/bin/x64/Release/Bass.Net.dll
+/home/demon4hire/Projects/BladeRenderEngine/Blade/bin/x64/Release/Microsoft.VisualBasic.dll
+/home/demon4hire/Projects/BladeRenderEngine/Blade/bin/x64/Release/System.Drawing.dll
+/home/demon4hire/Projects/BladeRenderEngine/Blade/bin/x64/Release/System.Windows.Forms.dll
+/home/demon4hire/Projects/BladeRenderEngine/Blade/obj/x64/Release/Blade.vbprojAssemblyReference.cache
+/home/demon4hire/Projects/BladeRenderEngine/Blade/obj/x64/Release/Blade.vbproj.CoreCompileInputs.cache
+/home/demon4hire/Projects/BladeRenderEngine/Blade/obj/x64/Release/Blade.vbproj.CopyComplete
+/home/demon4hire/Projects/BladeRenderEngine/Blade/obj/x64/Release/Blade.dll
