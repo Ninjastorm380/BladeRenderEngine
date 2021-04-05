@@ -64,11 +64,7 @@ Public Class Viewport : Inherits UserControl
         End If
     End Sub
     Public Sub GetHostForm(ByRef Output As Form) 'When called, output will contain the parent form that the engine resides inside.' 
-        If EngineLoaded = True Then
-            Output = ParentForm
-        Else
-            Output = Nothing
-        End If
+        Output = ParentForm
     End Sub
     Public Sub GetInputDevices(ByRef Output As InputDevice()) 'When called, output will contain all known audio input devices in the current enviroment.' 
         If EngineLoaded = True Then
@@ -146,8 +142,8 @@ Public Class Viewport : Inherits UserControl
 
     'Methods for managing view list'
     Public Sub AddView(ByRef V As View) 'Adds the view to the view list, and calls View.Load() if the engine is running.' 
-        Views.Add(V)
         V.Parent = Me
+        Views.Add(V)        
         If EngineLoaded = True Then
             Dim OldVStates(1) As Boolean
             OldVStates(0) = V.Active
@@ -188,6 +184,7 @@ Public Class Viewport : Inherits UserControl
         ResetView()
         SyncLock Me
             For Each X As View In Views
+                X.Parent = Me                 
                 X.Load()
             Next
         End SyncLock
