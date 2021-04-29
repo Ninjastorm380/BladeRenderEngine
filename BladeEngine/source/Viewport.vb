@@ -21,6 +21,8 @@
     Private InputDevices As InputDevice()
     Private OutputDevices As OutputDevice()
     Private Const MaxBufferCount As Integer = 5
+    Public Property LogicRate As Integer = 60
+    Public Property RenderRate As Integer = 60
 
     Public Property BorderlessFullscreen As Boolean
         Get
@@ -129,11 +131,12 @@
     End Sub
 
     Private Sub Logic()
-        Dim Limiter As New ThreadLimiter(200)
+        Dim Limiter As New ThreadLimiter(LogicRate)
         Do Until ParentForm Is Nothing Or CloseEngine = True
             Dim Snapshot As TimeSpan = LogicDeltaTimer.Elapsed
             LogicDeltaTime = Snapshot.TotalMilliseconds
             LogicDeltaTimer.Restart()
+            Limiter.IterationsPerSecond = LogicRate
             SyncLock Me
                 If Views.Count > 0 Then
                     Dim Count As Integer = Views.Count - 1
@@ -149,11 +152,12 @@
         LogicThreadExited = True
     End Sub
     Private Sub Render()
-        Dim Limiter As New ThreadLimiter(60)
+        Dim Limiter As New ThreadLimiter(RenderRate)
         Do Until ParentForm Is Nothing Or CloseEngine = True
             Dim Snapshot As TimeSpan = RenderDeltaTimer.Elapsed
             RenderDeltaTime = Snapshot.TotalMilliseconds
             RenderDeltaTimer.Restart()
+            Limiter.IterationsPerSecond = RenderRate
             SyncLock Me
                 If BufferedSurface IsNot Nothing Then
                     BufferedSurface.Graphics.Clear(Color.Black)

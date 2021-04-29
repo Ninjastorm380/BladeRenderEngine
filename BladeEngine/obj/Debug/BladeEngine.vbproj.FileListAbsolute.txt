@@ -16,7 +16,6 @@ C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\bin
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\bin\Debug\BladeEngine.dll
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\bin\Debug\BladeEngine.pdb
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\bin\Debug\Bass.Net.dll
-C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Debug\BladeEngine.vbprojAssemblyReference.cache
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Debug\Blade.Resources.resources
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Debug\BladeEngine.vbproj.GenerateResource.cache
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Debug\BladeEngine.vbproj.CoreCompileInputs.cache
