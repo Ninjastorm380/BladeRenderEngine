@@ -1,7 +1,0 @@
-/home/demon4hire/Projects/BladeRenderEngine/EngineTestForm/EngineTestForm/bin/x64/Release/EngineTestForm.exe
-/home/demon4hire/Projects/BladeRenderEngine/EngineTestForm/EngineTestForm/bin/x64/Release/Blade.dll
-/home/demon4hire/Projects/BladeRenderEngine/EngineTestForm/EngineTestForm/bin/x64/Release/Bass.Net.dll
-/home/demon4hire/Projects/BladeRenderEngine/EngineTestForm/EngineTestForm/obj/x64/Release/EngineTestForm.vbprojAssemblyReference.cache
-/home/demon4hire/Projects/BladeRenderEngine/EngineTestForm/EngineTestForm/obj/x64/Release/EngineTestForm.vbproj.CoreCompileInputs.cache
-/home/demon4hire/Projects/BladeRenderEngine/EngineTestForm/EngineTestForm/obj/x64/Release/EngineTestForm.vbproj.CopyComplete
-/home/demon4hire/Projects/BladeRenderEngine/EngineTestForm/EngineTestForm/obj/x64/Release/EngineTestForm.exe
