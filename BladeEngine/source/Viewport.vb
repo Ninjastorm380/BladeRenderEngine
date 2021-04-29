@@ -21,6 +21,7 @@
     Private InputDevices As InputDevice()
     Private OutputDevices As OutputDevice()
     Private Const MaxBufferCount As Integer = 5
+    Private UsingMono As Boolean = False
     Public Property LogicRate As Integer = 60
     Public Property RenderRate As Integer = 60
 
@@ -95,7 +96,7 @@
         SetStyle(ControlStyles.UserPaint, True)
         SetStyle(ControlStyles.Opaque, True)
         UpdateStyles()
-
+        If Type.GetType("Mono.Runtime") IsNot Nothing Then UsingMono = True
         Dim AsyncLoader As New Threading.Thread(AddressOf AsyncEngineLoader)
         AsyncLoader.Start()
     End Sub
@@ -268,7 +269,7 @@
         End SyncLock
     End Sub
     Private Sub ControlThreadInvoker()
-        If BorderlessFullscreen = True Then
+        If BorderlessFullscreen = True And UsingMono = False Then
             ParentForm.WindowState = FormWindowState.Normal
             ParentForm.FormBorderStyle = FormBorderStyle.None
             ParentForm.WindowState = FormWindowState.Maximized
