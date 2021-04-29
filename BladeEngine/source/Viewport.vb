@@ -22,6 +22,7 @@
     Private OutputDevices As OutputDevice()
     Private Const MaxBufferCount As Integer = 5
     Private UsingMono As Boolean = False
+    Private OldFormStyle As FormBorderStyle
     Public Property LogicRate As Integer = 60
     Public Property RenderRate As Integer = 60
 
@@ -224,7 +225,7 @@
             Loop
         End If
     End Sub
-    Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean 'Intercept all keypresses, including command keys.' 
+    Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean
         KeyBuffer.Enqueue(KeyEvent.Initialize(keyData))
         If KeyBuffer.Length > MaxBufferCount Then
             Do Until KeyBuffer.Length = MaxBufferCount
@@ -271,12 +272,13 @@
     Private Sub ControlThreadInvoker()
         If BorderlessFullscreen = True And UsingMono = False Then
             ParentForm.WindowState = FormWindowState.Normal
+            OldFormStyle = ParentForm.FormBorderStyle
             ParentForm.FormBorderStyle = FormBorderStyle.None
             ParentForm.WindowState = FormWindowState.Maximized
             ParentForm.TopMost = True
         Else
             Dim Check As Boolean = (ParentForm.FormBorderStyle = FormBorderStyle.None)
-            ParentForm.FormBorderStyle = FormBorderStyle.Sizable
+            ParentForm.FormBorderStyle = OldFormStyle
             If Check = True Then ParentForm.WindowState = FormWindowState.Normal
             ParentForm.TopMost = False
         End If
