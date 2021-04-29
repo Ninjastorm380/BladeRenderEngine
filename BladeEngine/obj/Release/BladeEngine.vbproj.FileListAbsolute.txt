@@ -16,3 +16,4 @@ C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\BladeEngine.vbproj.CoreCompileInputs.cache
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\BladeEngine.vbproj.CopyComplete
 C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\BladeEngine.dll
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\BladeEngine.vbprojAssemblyReference.cache

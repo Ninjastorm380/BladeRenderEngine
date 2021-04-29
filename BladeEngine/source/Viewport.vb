@@ -97,6 +97,7 @@
         SetStyle(ControlStyles.UserPaint, True)
         SetStyle(ControlStyles.Opaque, True)
         UpdateStyles()
+        OldFormStyle = ParentForm.FormBorderStyle
         If Type.GetType("Mono.Runtime") IsNot Nothing Then UsingMono = True
         Dim AsyncLoader As New Threading.Thread(AddressOf AsyncEngineLoader)
         AsyncLoader.Start()
