@@ -7,3 +7,12 @@ C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Release\BladeEngine.dll
 C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Release\Blade.Resources.resources
 C:\Users\demon4hire\source\repos\Blade\BladeEngine\bin\Release\Bass.Net.dll
 C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Release\BladeEngine.vbproj.CopyComplete
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\bin\Release\bass.dll
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\bin\Release\libbass.so
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\bin\Release\BladeEngine.dll
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\bin\Release\Bass.Net.dll
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\Blade.Resources.resources
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\BladeEngine.vbproj.GenerateResource.cache
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\BladeEngine.vbproj.CoreCompileInputs.cache
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\BladeEngine.vbproj.CopyComplete
+C:\Users\demon4hire\source\repos\Ninjastorm380\BladeRenderEngine\BladeEngine\obj\Release\BladeEngine.dll
