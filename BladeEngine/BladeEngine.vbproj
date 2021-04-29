@@ -4,14 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2C4F0769-229D-40AF-8353-DFDC29936BC4}</ProjectGuid>
+    <ProjectGuid>{76FFFB2E-D3C3-43D7-AD72-518565B92CB6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Blade</RootNamespace>
-    <AssemblyName>Blade</AssemblyName>
+    <AssemblyName>BladeEngine</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,7 @@
     </DocumentationFile>
     <DefineConstants>_MYFORMS=True</DefineConstants>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -35,7 +37,9 @@
     <DefineConstants>
     </DefineConstants>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
     <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -51,7 +55,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bass.Net">
-      <HintPath>..\..\Ninjastorm380\BladeRenderEngine\Blade\lib\Bass.Net.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bass.Net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -61,7 +65,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -77,22 +80,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioDevices.vb" />
-    <Compile Include="AudioStreams.vb" />
-    <Compile Include="Buffers.vb" />
-    <Compile Include="Events.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
-    <Compile Include="SpriteBase.vb" />
-    <Compile Include="ThreadLimiter.vb" />
-    <Compile Include="ViewBase.vb" />
-    <Compile Include="Viewport.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Viewport.Designer.vb">
-      <DependentUpon>Viewport.vb</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
@@ -104,6 +95,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="source\AudioDevices.vb" />
+    <Compile Include="source\AudioStreams.vb" />
+    <Compile Include="source\Buffers.vb" />
+    <Compile Include="source\Events.vb" />
+    <Compile Include="source\SpriteBase.vb" />
+    <Compile Include="source\ThreadLimiter.vb" />
+    <Compile Include="source\ViewBase.vb" />
+    <Compile Include="source\Viewport.Designer.vb" />
+    <Compile Include="source\Viewport.vb">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -132,9 +134,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bass.dll">
+    <Content Include="bass.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -1,0 +1,13 @@
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\bin\Debug\bass.dll
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\bin\Debug\libbass.so
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\bin\Debug\BladeEngine.dll
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\bin\Debug\BladeEngine.pdb
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\bin\Debug\BladeEngine.xml
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\bin\Debug\Bass.Net.dll
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Debug\BladeEngine.Resources.resources
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Debug\BladeEngine.vbproj.GenerateResource.cache
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Debug\BladeEngine.vbproj.CoreCompileInputs.cache
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Debug\BladeEngine.vbproj.CopyComplete
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Debug\BladeEngine.dll
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Debug\BladeEngine.xml
+C:\Users\demon4hire\source\repos\Blade\BladeEngine\obj\Debug\BladeEngine.pdb
