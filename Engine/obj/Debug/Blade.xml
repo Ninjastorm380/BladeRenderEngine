@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Blade
+</name>
+</assembly>
+<members>
+<member name="M:Blade.BinaryMethods.PackTimestamp(System.Byte[]@,System.Int32,System.DateTime@)">
+ <summary>
+ Serializes a basic primitive to raw bytes.
+ </summary>
+ <param name="Buffer">Backing buffer to write bytes to.</param>
+ <param name="Offset">Where to start writing in the backing buffer.</param>
+ <param name="Data">Variable holding the primitive to serialize.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Blade.BinaryMethods.UnpackTimestamp(System.Byte[]@,System.Int32,System.DateTime@)">
+ <summary>
+ Deserializes a basic primitive from raw bytes.
+ </summary>
+ <param name="Buffer">Backing buffer to read bytes from.</param>
+ <param name="Offset">Where to start reading in the backing buffer.</param>
+ <param name="Data">Variable to store the resulting primitive in.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Blade.BinaryMethods.PackUInt32(System.Byte[]@,System.Int32,System.UInt32@)">
+ <summary>
+ Serializes a basic primitive to raw bytes.
+ </summary>
+ <param name="Buffer">Backing buffer to write bytes to.</param>
+ <param name="Offset">Where to start writing in the backing buffer.</param>
+ <param name="Data">Variable holding the primitive to serialize.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Blade.BinaryMethods.UnpackUInt32(System.Byte[]@,System.Int32,System.UInt32@)">
+ <summary>
+ Deserializes a basic primitive from raw bytes.
+ </summary>
+ <param name="Buffer">Backing buffer to read bytes from.</param>
+ <param name="Offset">Where to start reading in the backing buffer.</param>
+ <param name="Data">Variable to store the resulting primitive in.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Blade.BinaryMethods.BinaryCompare(System.Byte[],System.Byte[],System.UInt32,System.UInt32)">
+ <summary>
+ Serializes a DateTime instance to raw bytes.
+ </summary>
+ <param name="A">Backing buffer to store bytes in.</param>
+ <param name="B">Where to start storing bytes in the backing buffer.</param>
+ <param name="Offset">The data to serialize.</param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

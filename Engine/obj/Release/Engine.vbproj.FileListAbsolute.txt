@@ -1,0 +1,16 @@
+/home/prydaran/RiderProjects/Blade/Engine/bin/Release/bass.dll
+/home/prydaran/RiderProjects/Blade/Engine/bin/Release/libbass.so
+/home/prydaran/RiderProjects/Blade/Engine/bin/Release/Bass.Net.dll
+/home/prydaran/RiderProjects/Blade/Engine/obj/Release/Engine.vbproj.AssemblyReference.cache
+/home/prydaran/RiderProjects/Blade/Engine/obj/Release/Engine.vbproj.CoreCompileInputs.cache
+/home/prydaran/RiderProjects/Blade/Engine/obj/Release/Engine.vbproj.CopyComplete
+/home/prydaran/RiderProjects/Blade/Engine/bin/Release/Blade.dll
+/home/prydaran/RiderProjects/Blade/Engine/obj/Release/Blade.dll
+Z:\RiderProjects\Blade\Engine\bin\Release\bass.dll
+Z:\RiderProjects\Blade\Engine\bin\Release\libbass.so
+Z:\RiderProjects\Blade\Engine\bin\Release\Blade.dll
+Z:\RiderProjects\Blade\Engine\bin\Release\Bass.Net.dll
+Z:\RiderProjects\Blade\Engine\obj\Release\Engine.vbprojAssemblyReference.cache
+Z:\RiderProjects\Blade\Engine\obj\Release\Engine.vbproj.CoreCompileInputs.cache
+Z:\RiderProjects\Blade\Engine\obj\Release\Engine.vbproj.CopyComplete
+Z:\RiderProjects\Blade\Engine\obj\Release\Blade.dll

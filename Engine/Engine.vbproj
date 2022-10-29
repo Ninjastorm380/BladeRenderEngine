@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{8642B109-725C-44F8-8FEB-2F2CB3036F9C}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <RootNamespace>Blade</RootNamespace>
+        <AssemblyName>Blade</AssemblyName>
+        <FileAlignment>512</FileAlignment>
+        <MyType>Windows</MyType>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <DefineDebug>true</DefineDebug>
+        <DefineTrace>true</DefineTrace>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DocumentationFile>Blade.xml</DocumentationFile>
+        <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>none</DebugType>
+        <DefineDebug>false</DefineDebug>
+        <DefineTrace>true</DefineTrace>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DocumentationFile></DocumentationFile>
+        <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    <PropertyGroup>
+        <OptionExplicit>On</OptionExplicit>
+    </PropertyGroup>
+    <PropertyGroup>
+        <OptionCompare>Binary</OptionCompare>
+    </PropertyGroup>
+    <PropertyGroup>
+        <OptionStrict>Off</OptionStrict>
+    </PropertyGroup>
+    <PropertyGroup>
+        <OptionInfer>On</OptionInfer>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Bass.Net, Version=2.4.14.1, Culture=neutral, PublicKeyToken=null">
+            <HintPath>..\lib\Bass.Net.dll</HintPath>
+        </Reference>
+        <Reference Include="mscorlib"/>
+        <Reference Include="System"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Drawing"/>
+        <Reference Include="System.Numerics"/>
+        <Reference Include="System.Windows.Forms"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Xml.Linq"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Import Include="Microsoft.VisualBasic"/>
+        <Import Include="System"/>
+        <Import Include="System.Collections"/>
+        <Import Include="System.Collections.Generic"/>
+        <Import Include="System.Data"/>
+        <Import Include="System.Diagnostics"/>
+        <Import Include="System.Linq"/>
+        <Import Include="System.Xml.Linq"/>
+        <Import Include="System.Threading.Tasks"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="My Project\AssemblyInfo.vb"/>
+        <Compile Include="My Project\Application.Designer.vb">
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Application.myapp</DependentUpon>
+        </Compile>
+        <Compile Include="Source\BinaryMethods.vb"/>
+        <Compile Include="Source\Core\Base\EngineBase.vb"/>
+        <Compile Include="Source\Core\Entity\Entity.vb"/>
+        <Compile Include="Source\Core\Input\KeyboardState.vb"/>
+        <Compile Include="Source\Core\Input\MouseState.vb"/>
+        <Compile Include="Source\Core\LogicState.vb"/>
+        <Compile Include="Source\Core\RenderState.vb"/>
+        <Compile Include="Source\Core\ResolutionMode.vb"/>
+        <Compile Include="Source\Fonts\Fonts.vb"/>
+        <Compile Include="Source\Governor\Declarations.vb"/>
+        <Compile Include="Source\Governor\Methods.vb"/>
+        <Compile Include="Source\Governor\Properties.vb"/>
+        <Compile Include="Source\QueueStream\Declarations.vb"/>
+        <Compile Include="Source\QueueStream\Methods.vb"/>
+        <Compile Include="Source\QueueStream\Properties.vb"/>
+        <Compile Include="Source\Sound\Audio.vb"/>
+        <Compile Include="Source\Sound\AudioDevice.vb"/>
+        <Compile Include="Source\Sound\AudioDeviceType.vb"/>
+        <Compile Include="Source\Sound\AudioData.vb"/>
+        <Compile Include="Source\Sound\AudioStream.vb"/>
+        <Compile Include="Source\Sound\AudioFXWriter.vb"/>
+        <Compile Include="Source\Sprites\Sprite.vb"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="My Project\Application.myapp">
+            <Generator>MyApplicationCodeGenerator</Generator>
+            <LastGenOutput>Application.Designer.vb</LastGenOutput>
+        </None>
+        <None Include="packages.config"/>
+    </ItemGroup>
+    <ItemGroup>
+        <AdditionalFiles Include="bass.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </AdditionalFiles>
+        <AdditionalFiles Include="libbass.so">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </AdditionalFiles>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets"/>
+</Project>

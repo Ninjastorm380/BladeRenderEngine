@@ -1,0 +1,13 @@
+/home/prydaran/RiderProjects/Blade/TestForm/bin/Release/bass.dll
+/home/prydaran/RiderProjects/Blade/TestForm/bin/Release/libbass.so
+/home/prydaran/RiderProjects/Blade/TestForm/bin/Release/TestForm.exe
+/home/prydaran/RiderProjects/Blade/TestForm/bin/Release/TestForm.pdb
+/home/prydaran/RiderProjects/Blade/TestForm/bin/Release/TestForm.xml
+/home/prydaran/RiderProjects/Blade/TestForm/bin/Release/Bass.Net.dll
+/home/prydaran/RiderProjects/Blade/TestForm/obj/Release/TestForm.vbproj.AssemblyReference.cache
+/home/prydaran/RiderProjects/Blade/TestForm/obj/Release/TestForm.vbproj.CoreCompileInputs.cache
+/home/prydaran/RiderProjects/Blade/TestForm/obj/Release/TestForm.vbproj.CopyComplete
+/home/prydaran/RiderProjects/Blade/TestForm/obj/Release/TestForm.exe
+/home/prydaran/RiderProjects/Blade/TestForm/obj/Release/TestForm.xml
+/home/prydaran/RiderProjects/Blade/TestForm/obj/Release/TestForm.pdb
+/home/prydaran/RiderProjects/Blade/TestForm/bin/Release/Blade.dll
